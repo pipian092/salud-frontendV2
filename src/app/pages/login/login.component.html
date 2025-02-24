@@ -1,0 +1,83 @@
+<div class="wrapper wrapper-full-page">
+    <div class="full-page login-page" data-color="azure">
+
+    <!--   you can change the color of the filter page using: data-color="blue | azure | green | orange | red | purple" -->
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+                        <form [formGroup]="myForm" (ngSubmit)="login()" >
+
+                        <!--   if you want to have the card without animation please remove the ".card-hidden" class   -->
+                            <div class="card card-hidden">
+                                <!-- Logo added here -->
+                            <div class="text-center">
+                                <img src="../../../assets/img/REDSOL2.png" alt="Logo" style="max-width: 150px; margin-bottom: 20px;">
+                            </div>
+                                <div class="header text-center">Inicio de sesión</div>
+                                <div class="content">
+                                    <div class="form-group">
+                                        <label>Email address</label>
+                                        <input  formControlName="email" type="email" placeholder="Enter email" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input formControlName="password" type="password" placeholder="Password" class="form-control">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <input id="checkbox21" type="checkbox" checked="">
+                                            <label for="checkbox21">
+                                                Recordarme Contraseña
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer text-center">
+                                    <button type="submit" class="btn btn-fill btn-danger btn-wd" >iniciar sesión</button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    	<footer class="footer footer-transparent">
+            <div class="container">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                    &copy; {{test | date: 'yyyy'}} <a href="https://sedesol.gob.hn/tag/red-solidaria/">Red Solidaria</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+</div>
